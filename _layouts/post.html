@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post-frame">
+  <header class="content-header">
+    <p class="eyebrow">/articles/{{ page.date | date: "%Y/%m/%d" }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%B %-d, %Y" }}
+      {% if page.author %} · {{ page.author }}{% endif %}
+      {% if page.read_time %} · {{ page.read_time }} min read{% endif %}
+    </p>
+    {% if page.summary %}
+      <p class="lede">{{ page.summary }}</p>
+    {% endif %}
+  </header>
+
+  <div class="content-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    {% if page.tags and page.tags.size > 0 %}
+      <p class="tag-row">
+        {% for tag in page.tags %}
+          <span class="tag">#{{ tag }}</span>
+        {% endfor %}
+      </p>
+    {% endif %}
+    <p class="disclaimer">Research notes only. Not investment advice.</p>
+  </footer>
+</article>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% seo title=false %}
+    <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div>
+          <a class="site-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+          <p class="site-tagline">{{ site.description }}</p>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ "/" | relative_url }}">index</a>
+          {% assign page_paths = site.header_pages %}
+          {% for path in page_paths %}
+            {% assign nav_page = site.pages | where: "path", path | first %}
+            {% if nav_page and nav_page.title %}
+              <a href="{{ nav_page.url | relative_url }}">{{ nav_page.title | downcase }}</a>
+            {% endif %}
+          {% endfor %}
+          <a href="{{ "/feed.xml" | relative_url }}">feed</a>
+        </nav>
+      </header>
+
+      <main class="site-main">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <span class="footer-prompt">$</span>
+        Markdown in, signal out.
+      </footer>
+    </div>
+  </body>
+</html>

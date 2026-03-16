@@ -1,0 +1,389 @@
+---
+---
+
+:root {
+  --bg: #2e3440;
+  --bg-alt: #3b4252;
+  --bg-soft: #434c5e;
+  --border: #4c566a;
+  --text: #e5e9f0;
+  --muted: #d8dee9;
+  --link: #88c0d0;
+  --link-hover: #81a1c1;
+  --heading: #8fbcbb;
+  --note: #a3be8c;
+  --warn: #ebcb8b;
+  --danger: #bf616a;
+  --shadow: rgba(15, 18, 24, 0.35);
+  --font-mono: "Berkeley Mono", "JetBrains Mono", "SFMono-Regular", "IBM Plex Mono", "Iosevka", "Menlo", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(136, 192, 208, 0.08), transparent 32%),
+    linear-gradient(180deg, #323946 0%, var(--bg) 16rem);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: transparent;
+  color: var(--text);
+  font: 16px/1.7 var(--font-mono);
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2rem;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--link-hover);
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-shell {
+  width: min(100%, 76rem);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.site-header,
+.site-footer,
+.page-frame,
+.post-frame,
+.post-card {
+  background: rgba(59, 66, 82, 0.74);
+  border: 1px solid rgba(76, 86, 106, 0.95);
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+}
+
+.site-header {
+  margin-bottom: 1.25rem;
+}
+
+.site-brand {
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.site-brand::before {
+  content: "$ ";
+  color: var(--link);
+}
+
+.site-tagline,
+.post-meta,
+.eyebrow,
+.small,
+.muted,
+.site-footer {
+  color: var(--muted);
+}
+
+.site-tagline,
+.post-meta,
+.eyebrow {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0;
+  text-decoration: none;
+}
+
+.site-nav a::before {
+  content: "/";
+  color: var(--muted);
+}
+
+.site-main {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.page-frame,
+.post-frame {
+  padding: 1.4rem 1.25rem 1.5rem;
+}
+
+.content-header {
+  margin-bottom: 1.5rem;
+}
+
+.content-header h1,
+.content-body h1,
+.content-body h2,
+.content-body h3 {
+  margin: 0 0 0.8rem;
+  color: var(--heading);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.content-header h1::before,
+.content-body h1::before {
+  content: "> ";
+  color: var(--link);
+}
+
+.content-body h2::before {
+  content: ">> ";
+  color: var(--link);
+}
+
+.content-body h3::before {
+  content: ">>> ";
+  color: var(--link);
+}
+
+.lede {
+  margin: 0;
+  max-width: 52rem;
+  color: var(--text);
+}
+
+.content-body > :first-child {
+  margin-top: 0;
+}
+
+.content-body > :last-child {
+  margin-bottom: 0;
+}
+
+.content-body p,
+.content-body ul,
+.content-body ol,
+.content-body blockquote,
+.content-body pre,
+.content-body table {
+  margin: 0 0 1.1rem;
+}
+
+.content-body ul,
+.content-body ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.content-body ul li,
+.content-body ol li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.content-body ul li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--link);
+}
+
+.content-body ol {
+  counter-reset: ordered-list;
+}
+
+.content-body ol li {
+  counter-increment: ordered-list;
+}
+
+.content-body ol li::before {
+  content: counter(ordered-list) ".";
+  position: absolute;
+  left: 0;
+  color: var(--link);
+}
+
+.content-body blockquote {
+  margin-left: 0;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--link);
+  background: linear-gradient(90deg, rgba(136, 192, 208, 0.08), transparent 70%), var(--bg-alt);
+  color: var(--muted);
+}
+
+.content-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.content-body blockquote::before {
+  content: "note://";
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--note);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.content-body code {
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.2rem;
+  background: rgba(94, 129, 172, 0.12);
+  color: var(--warn);
+}
+
+.content-body pre {
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(136, 192, 208, 0.04), transparent 35%),
+    var(--bg-alt);
+}
+
+.content-body pre code {
+  padding: 0;
+  background: transparent;
+  color: var(--text);
+}
+
+.content-body hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  opacity: 0.9;
+}
+
+.content-body strong {
+  color: #eceff4;
+}
+
+.content-body em {
+  color: var(--muted);
+}
+
+.content-body table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.content-body th,
+.content-body td {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.content-body th {
+  color: var(--heading);
+  background: rgba(76, 86, 106, 0.25);
+}
+
+.post-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-card {
+  padding: 1rem 1rem 1.1rem;
+}
+
+.post-card h3 {
+  margin: 0 0 0.4rem;
+}
+
+.post-card h3::before {
+  content: "$ ";
+  color: var(--link);
+}
+
+.post-card p {
+  margin: 0.35rem 0 0;
+}
+
+.post-card .meta-line {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid rgba(136, 192, 208, 0.35);
+  color: var(--link);
+}
+
+.disclaimer {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.footer-prompt {
+  color: var(--link);
+}
+
+.callout-note,
+.callout-warn {
+  padding: 0.9rem 1rem;
+  border-left: 3px solid;
+  background: var(--bg-alt);
+}
+
+.callout-note {
+  border-left-color: var(--note);
+}
+
+.callout-warn {
+  border-left-color: var(--warn);
+}
+
+@media (max-width: 700px) {
+  .site-shell {
+    padding: 1rem 0.9rem 2rem;
+  }
+
+  .site-header,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+}
