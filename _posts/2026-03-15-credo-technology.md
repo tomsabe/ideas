@@ -8,12 +8,6 @@ tags:
   - AI-infrastructure
 ---
 
-# Credo Technology: The AEC Moat Is Just the Foundation — Five Growth Pillars Make the Real Bull Case
-
-**The stock has fallen ~45% from its early December 2025 high. The business has not. A disciplined re-entry into Credo Technology Group Holding Ltd (CRDO) at current levels — with a clear-eyed view of concentration risk — offers what I believe is the most compelling risk/reward setup in AI infrastructure connectivity today.**
-
----
-
 ## The Market's Overreaction Creates an Opportunity
 
 Credo's fiscal Q3 2026 earnings report (for the quarter ended January 31, 2026) was, by any reasonable measure, extraordinary. Revenue hit $407.0 million, up 201.5% year-over-year and 51.9% sequentially, with a GAAP gross margin of 68.5% and non-GAAP net income of $208.8 million. Yet shares dropped sharply the day after — roughly 15% — and the selloff has since deepened, pushing the stock more than 45% below its 52-week high of approximately $214.

@@ -8,12 +8,6 @@ tags:
   - emerging-markets
 ---
 
-# Nu Holdings: A $67 Billion Bank Trading at a Discount to Its Own Growth Story
-
-**The stock has shed 27% from its January high. The fundamentals argue for re-engagement.**
-
----
-
 Nu Holdings (NYSE: NU) hit an all-time high near $18.98 in late January 2026 and has since retreated roughly 27% to approximately $13.89. The selloff reflects a strengthening dollar, macro nervousness around Brazil, and broad emerging-market risk-off sentiment. None of that changes the underlying story: this is a hyper-profitable, structurally advantaged digital bank compounding earnings at 45%+ annually, trading at roughly 23x trailing earnings in the midst of a multi-year global expansion.
 
 Nu is not merely a growth story — it is an operating leverage story, with a cost structure that no incumbent bank in its markets can match. The key question for investors today is whether the pullback represents a macro-induced entry point or a harbinger of genuine earnings deterioration. After examining the Q4 2025 results, the company's regulatory evolution, and its US expansion optionality, the evidence tilts firmly toward the former.

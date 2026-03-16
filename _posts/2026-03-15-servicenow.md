@@ -8,12 +8,6 @@ tags:
   - AI
 ---
 
-# ServiceNow: The AI Control Tower the Market Has Mispriced
-
-**The enterprise workflow giant has shed roughly half its value from peak on fears that AI will render it obsolete. The opposite is more likely true — and the fundamentals make the case.**
-
----
-
 ## A Rare Dislocation in a High-Quality Compounder
 
 ServiceNow (NYSE: NOW) is trading at approximately $113, down roughly 46% from its 52-week high of $211. The selloff is not a function of deteriorating fundamentals. The company just crossed $13 billion in annual revenue, grew subscription revenues 21% year-over-year, maintained a 98% renewal rate, and guided for 20.5%–21% subscription revenue growth in fiscal 2026. Yet the stock sits near levels last seen in autumn 2023, priced as though the business is structurally impaired.

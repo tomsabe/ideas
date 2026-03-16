@@ -8,12 +8,6 @@ tags:
   - royalties
 ---
 
-# Halozyme Therapeutics: A Royalty Machine Trading at a Discount to Its Own Growth
-
-*Shares at ~$64 imply roughly 6x 2026 adjusted EBITDA — a striking disconnect for a business with rapidly expanding margins, $1B+ in royalty revenue on deck, and a free option on the Merck/Keytruda dispute.*
-
----
-
 ## A Pull-Back Creates an Entry Point
 
 Halozyme's 52-week range spans $47.50 to $82.22. After hitting that high early in 2026, the stock has retreated roughly 23%, with shares now trading around $63–64. The sell-off is not driven by any deterioration in fundamentals. In fact, the business just delivered its best year ever, and management raised guidance sharply. The disconnect between operational momentum and share price is the thesis in one sentence: *the market is re-rating the stock based on near-term noise while the underlying royalty engine compounds at an accelerating rate.*

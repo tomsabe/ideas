@@ -8,12 +8,6 @@ tags:
   - industrials
 ---
 
-# FTAI Aviation: The MRE Flywheel Keeps Spinning, But Three New Bets Demand Scrutiny
-
-**March 15, 2026**
-
----
-
 FTAI Aviation has compounded at a pace that would embarrass most private equity funds. A $100 investment made at year-end 2020 was worth over $1,188 by the end of 2025 — a return that dwarfs the S&P Midcap 400's $155 and the Dow Jones US Aerospace index's $245 over the same period. Yet the stock currently trades at $222, down roughly 31% from its 52-week high near $323. The pullback creates a real question: is the market repricing a structurally superior business, or fairly discounting an increasingly complex and execution-dependent story?
 
 The answer, I believe, is both — and the difference between "buy the dip" and "wait for clarity" hinges on how seriously investors take three simultaneous strategic pivots occurring on top of an already high-velocity base business.

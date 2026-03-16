@@ -8,12 +8,6 @@ tags:
   - compounders
 ---
 
-# Roper Technologies: A 40% Haircut Creates a Rare Entry Point in a Best-in-Class Compounder
-
-**ROP shares have been cut nearly in half from their peak. The bear case is real but widely known — the bull case is hiding in plain sight.**
-
----
-
 Roper Technologies has spent roughly two decades refining a model most conglomerates only aspire to: acquire niche vertical software businesses at fair prices, operate them with minimal corporate overhead, harvest the cash flows, and redeploy. The formula has compounded adjusted free cash flow at approximately 18% annually since 2022 — from $1.49 billion to $2.47 billion. Yet the stock sits at roughly $351, down about 41% from its 52-week high near $595, trading at levels last seen well before the business was meaningfully larger.
 
 The proximate cause is well-understood: a guidance miss driven by softness at Deltek, Roper's government contracting software unit. But the market's reaction has been disproportionate to the damage, creating a compelling setup for patient, fundamental investors.

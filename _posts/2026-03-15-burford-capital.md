@@ -8,12 +8,6 @@ tags:
   - valuation
 ---
 
-# Burford Capital: Trading at 75 Cents on the Dollar While a $16 Billion Verdict Awaits Its Fate
-
-**The market is pricing Burford's core legal finance franchise near breakeven — an asymmetric setup for investors willing to parse the signal from the noise.**
-
----
-
 Burford Capital (NYSE: BUR) has had a brutal twelve months. Shares have declined roughly 42%, recently trading near $7.92 — a level that implies the stock changes hands at approximately 0.75x tangible book value. For a company that has compounded its capital provision portfolio at a 26% IRR since inception, generated nearly $3.8 billion in cumulative realizations, and just posted 39% growth in Principal Finance segment commitments, that valuation gap demands explanation. Understanding what is actually happening — versus what the market seems to fear — is the key to sizing up what is genuinely a compelling risk-reward proposition.
 
 ---

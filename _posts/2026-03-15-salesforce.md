@@ -8,12 +8,6 @@ tags:
   - AI
 ---
 
-# Salesforce: The $25 Billion Bet That the Stock Market Has It Wrong
-
-**At ~$193, Salesforce trades at a depressed valuation relative to its recent history. A record earnings beat, 29,000 Agentforce deals, and the largest debt-funded buyback in the company's history suggest the market is mispricing a durable franchise at a critical AI inflection point.**
-
----
-
 ## A High-Quality Franchise at a Distressed Valuation
 
 Salesforce (CRM) enters fiscal year 2027 with a peculiar combination of attributes that rarely coexist: record operating cash flow, accelerating AI product adoption, a contracting share count, and a stock that has lost roughly 29% over the past year. As of mid-March 2026, shares trade near $193 — well below their 52-week high above $310.
