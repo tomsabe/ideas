@@ -109,6 +109,24 @@ img {
   font-size: 0.92rem;
 }
 
+.site-cta {
+  margin: 0.3rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.cta-link {
+  color: #a3be8c;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2rem;
+}
+
+.cta-link:hover,
+.cta-link:focus-visible {
+  color: #b5d19c;
+}
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
