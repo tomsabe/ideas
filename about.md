@@ -7,9 +7,9 @@ permalink: /about/
 
 ## What is Tenzing?
 
-Tenzing is an AI-powered equity research system that generates long-form investment analysis on public companies. It is designed to produce the kind of deep, fundamental research that a skilled analyst would write — with honest treatment of both bull and bear cases, precise use of financial data, and clear articulation of what would invalidate each thesis.
+Tenzing is an AI-powered equity research system that generates long-form investment analysis on public companies. It produces the kind of deep, fundamental research a skilled analyst would write — with honest treatment of both bull and bear cases, precise use of financial data, and clear articulation of what would invalidate each thesis.
 
-The name comes from Tenzing Norgay — one of the first two people to reach the summit of Everest. The system is built to do the heavy lifting of financial research so the investor can focus on judgment and decision-making.
+The name comes from Tenzing Norgay — one of the first two people to reach the summit of Everest. The system does the heavy lifting of financial research so the investor can focus on judgment and decision-making.
 
 ## Research philosophy
 
@@ -20,7 +20,7 @@ The name comes from Tenzing Norgay — one of the first two people to reach the 
 
 ## Article structure
 
-Each Tenzing article follows a consistent format:
+Each article follows a consistent format:
 
 1. **One-sentence thesis** — the core insight in plain language
 2. **What the market is worried about** — the bear case, taken seriously
@@ -28,27 +28,6 @@ Each Tenzing article follows a consistent format:
 4. **Valuation** — what you're paying and what you're getting
 5. **Key risks** — specific, falsifiable conditions that would break the thesis
 6. **Investment conclusion** — who this is for and what time horizon makes sense
-
-## Writing conventions
-
-- Use one file per article in `_posts/`
-- Keep opening summaries short and specific
-- Prefer tables, bullets, and short sections over long walls of text
-- Treat blockquotes as side notes, assumptions, or model caveats
-
-## Front matter template
-
-```yaml
----
-title: "Article title"
-date: 2026-03-16
-summary: One-sentence takeaway for the homepage.
-tags:
-  - equities
-  - software
-  - valuation
----
-```
 
 ## Disclaimer
 
