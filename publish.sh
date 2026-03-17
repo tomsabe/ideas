@@ -19,6 +19,9 @@ set -euo pipefail
 TENZING_DIR="../tenzing-master/tenzing-python/agents"
 POSTS_DIR="_posts"
 
+# Track published files for git commit
+PUBLISHED_FILES=()
+
 # --- Publish a single file ---
 publish_file() {
   local SOURCE="$1"
@@ -94,8 +97,34 @@ publish_file() {
     ' "$SOURCE" | sed "s|^\\*Disclosure: This article is for informational purposes only.*|$DISCLOSURE|"
   } > "$OUTFILE"
 
+  PUBLISHED_FILES+=("$OUTFILE")
   echo ""
   echo "Published: $OUTFILE"
+}
+
+# --- Git commit and push all published posts ---
+git_push() {
+  if [[ ${#PUBLISHED_FILES[@]} -eq 0 ]]; then
+    return
+  fi
+
+  echo ""
+  echo "--- Pushing to GitHub Pages ---"
+
+  git add "${PUBLISHED_FILES[@]}"
+
+  if [[ ${#PUBLISHED_FILES[@]} -eq 1 ]]; then
+    # Single post: use the article title in the commit message
+    local title
+    title=$(grep -m1 '^title:' "${PUBLISHED_FILES[0]}" | sed 's/^title: *"*//;s/"*$//')
+    git commit -m "Publish: ${title}"
+  else
+    git commit -m "Publish ${#PUBLISHED_FILES[@]} new Tenzing articles"
+  fi
+
+  git push origin main
+  echo ""
+  echo "Pushed ${#PUBLISHED_FILES[@]} post(s) to GitHub Pages."
 }
 
 # --- Scan mode: find new articles not yet posted ---
@@ -180,3 +209,5 @@ else
   # Scan mode
   scan_and_publish "${1:-}"
 fi
+
+git_push
