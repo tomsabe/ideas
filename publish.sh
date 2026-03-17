@@ -7,6 +7,7 @@
 # - Extracts summary from the first bold (**...**) or italic (*...*) line
 # - Generates a slug from the title
 # - Strips the duplicate H1, subhead, and leading HR from the body
+# - Asks if the author holds the security and updates the disclaimer
 # - Writes the post to _posts/ with front matter
 #
 # Date defaults to today if not provided.
@@ -49,7 +50,22 @@ if [[ -f "$OUTFILE" ]]; then
   exit 1
 fi
 
-# Build the post: front matter + body with duplicate header stripped
+# Ask about ownership
+echo ""
+echo "  Title: $TITLE"
+echo "  Date:  $DATE"
+echo ""
+read -rp "Do you hold a position in this security? (y/n): " OWNS
+
+STANDARD_DISCLOSURE="*Disclosure: This article is for informational purposes only. It does not constitute investment advice. Investors should conduct their own due diligence before making investment decisions.*"
+
+if [[ "$OWNS" =~ ^[Yy] ]]; then
+  DISCLOSURE="*Disclosure: Tom Saberhagen held a position in this security as of the date of publication. This article is for informational purposes only. It does not constitute investment advice. Investors should conduct their own due diligence before making investment decisions.*"
+else
+  DISCLOSURE="$STANDARD_DISCLOSURE"
+fi
+
+# Build the post: front matter + body with duplicate header stripped and disclaimer updated
 {
   echo "---"
   echo "title: \"$(echo "$TITLE" | sed 's/"/\\"/g')\""
@@ -63,7 +79,7 @@ fi
   echo ""
 
   # Skip everything up to and including the first "---" line after the H1/subhead block,
-  # then emit the rest of the file
+  # then emit the rest of the file with the disclaimer swapped
   awk '
     BEGIN { skipping=1; found_hr=0 }
     skipping && /^# /    { next }
@@ -72,9 +88,8 @@ fi
     skipping && /^---$/  { found_hr=1; next }
     skipping && /^$/     { next }
     { skipping=0; print }
-  ' "$SOURCE"
+  ' "$SOURCE" | sed "s|^\\*Disclosure: This article is for informational purposes only.*|$DISCLOSURE|"
 } > "$OUTFILE"
 
+echo ""
 echo "Published: $OUTFILE"
-echo "  Title: $TITLE"
-echo "  Date:  $DATE"
